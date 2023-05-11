@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500&display=swap');
+
+:root {
+    --light-grey: #d6e2f0;
+    --grayish-blue: #7b879d;
+    --dark-blue: #1f3251;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: var(--light-grey);
+    font-family: 'Outfit', sans-serif;
+}
+body.dark {
+    background: linear-gradient(var(--dark-blue), #000);
+}
+.container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: #fff;
+    min-width: 290px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.287);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.qr-code__img {
+    width: 290px;
+    height: 60%;
+    transition: all 1s;
+}
+.qr-code__img img {
+    width: 100%;
+    border-radius: 3%;
+    transition: all 1s;
+}
+.qr-code__text {
+    width: 290px;
+    height: 40%;
+}
+.qr-code__text h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    color: var(--dark-blue);
+}
+.qr-code__text p {
+    text-align: center;
+    padding: 15px 10px 40px;
+    color: var(--grayish-blue);
+}
+@media (hover:hover) {
+
+    .qr-code__img:hover {
+        width: 500px;
+        height: 100%;
+    }
+    .qr-code__img:hover > img {
+        height: 100%;
+        transform: rotate(1turn);
+        filter: grayscale(1) contrast(1000%);
+    }
+}

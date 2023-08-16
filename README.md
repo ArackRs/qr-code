@@ -1,3 +1,3 @@
 # Challenge 1
 ## Preview of the site
-Link of the solution: https://challengesfrontendmentor.github.io/Challenge1/
+Link of the solution: [QrCode](https://challengesbyfm.github.io/QrCode/)
